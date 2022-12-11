@@ -58,10 +58,13 @@
         body: new FormData(formElem),
       });
     });
+    function printResult(res){
+      window.alert("This picture was identified as: " + res);
+    }
   </script>
   <body>
     <input type="file" onchange="readURL(this);" name="files" required multiple />
     <img id="blah" src="#" alt="your image" />
-    <button type="submit" onclick='window.alert("resultvarhere")'>Submit</button>
+    <button type="submit" onclick='printResult("black bean")'>Submit</button>
   </body>
 </html>
